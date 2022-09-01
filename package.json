@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist; tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/Sagar133/Chz-Indexer/issues"
   },
-  "homepage": "https://github.com/Sagar133/Chz-Indexer#readme"
+  "homepage": "https://github.com/Sagar133/Chz-Indexer#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "bluebird": "^3.7.2",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.2",
+    "etherscan-api": "^10.2.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4",
+    "typescript": "^4.8.2"
+  }
 }
