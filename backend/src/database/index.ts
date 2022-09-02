@@ -4,11 +4,9 @@ import * as mongoose from 'mongoose'
 import * as debug from 'debug'
 import * as Bluebird from 'bluebird'
 
-
 // @ts-ignore
 mongoose.Promise = Bluebird
 // mongoose.set('debug', true)
-
 
 export const open = (url?: string) => {
   return new Promise((resolve, reject) => {
