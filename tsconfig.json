@@ -1,37 +1,58 @@
-{
-    "compilerOptions": {
-      "module": "commonjs",
-      "baseUrl": ".",
-      "target": "es6",
-      "types": [
-        "node",
-        "express"
-      ],
-      "noImplicitAny": false,
-      "sourceMap": false,
-      "lib": [
-        "es5",
-        "es6",
-        "es2016",
-        "es2017",
-        "dom"
-      ],
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "allowJs": true,
-      "jsx": "react",
-      "outDir": "dist"
-    },
-    "include": [
-      "backend"
-    ],
-    "exclude": [
-      "**/*test.tsx",
-      "node_modules",
-      "dist",
-      "config",
-      "electron",
-      "release"
-    ]
-}
+// {
+//     "compilerOptions": {
+//       "module": "commonjs",
+//       "baseUrl": ".",
+//       "target": "es6",
+//       "types": [
+//         "node",
+//         "express"
+//       ],
+//       "noImplicitAny": false,
+//       "sourceMap": false,
+//       "lib": [
+//         "es5",
+//         "es6",
+//         "es2016",
+//         "es2017",
+//         "dom"
+//       ],
+//       "emitDecoratorMetadata": true,
+//       "experimentalDecorators": true,
+//       "allowJs": true,
+//       "jsx": "react",
+//       "outDir": "dist"
+//     },
+//     "resolveJsonModule": true,
+//     "include": [
+//       "backend",
+//       "backend/src/libraries/**/*.json"
+//     ],
+//     "exclude": [
+//       "**/*test.tsx",
+//       "node_modules",
+//       "dist",
+//       "config",
+//       "electron",
+//       "release"
+//     ]
+// }
   
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["backend/**/*", "backend/src/**/*.json"]
+}

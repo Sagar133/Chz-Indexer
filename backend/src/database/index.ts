@@ -1,17 +1,9 @@
 require('dotenv').config()
 
-import * as mongoose from 'mongoose'
-import * as debug from 'debug'
-import * as Bluebird from 'bluebird'
-
-// @ts-ignore
-mongoose.Promise = Bluebird
-// mongoose.set('debug', true)
+import mongoose from 'mongoose'
 
 export const open = (url?: string) => {
   return new Promise((resolve, reject) => {
-    // Setup cache for mongoose
-    // cachegoose(mongoose)
     console.log('opening mongodb connection')
 
     const options:any = {
