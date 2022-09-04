@@ -1,0 +1,15 @@
+* To start the indexer 
+curl --location --request POST 'http://localhost:3000/api/start'
+
+* Kill the project
+curl --location --request POST 'http://localhost:3000/api/stop'
+
+* To fetch the amount of Chiliz token transfered during program
+curl --location --request GET 'http://localhost:3000/api/value'
+
+* Api to validate a transaction is valid chiliz transaction or not
+curl --location --request POST 'http://localhost:3000/api/validate' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "transactionHash": "08ef7061d0180427dcfe148a68af04d6cb7fdfdee784cad50294210d9f71"
+}'
