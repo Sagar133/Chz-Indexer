@@ -3,6 +3,7 @@
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/4066.png" alt="Logo" width="80" height="80">
+    <h2 align="center"> Chiliz Indexer </h2>
   </a>
 </div>
 
