@@ -86,9 +86,10 @@ The following curl commands written in **Postman-Curls.txt(https://github.com/Sa
 
 - [x] Implement Indexer Backend
 - [x] Index the Ethereum blockchain in real time for the Chiliz contract address
-- [x] Store all transactions of Chiliz-related transactions in the blockchain
+- [x] Store all transactions of Chiliz-related smart contract from the blockchain
 - [x] API route to fetch the amount of Chiliz tokens transferred while listening to transactions from the indexer
 - [x] API route to validate if a given transaction hash is related to Chiliz token(Chiliz smart contract)
+- [x] Continue to listen from the last captured block incase of any down time
 - [ ] Frontend in react for the indexer (https://github.com/Sagar133/Chz-indexer-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
