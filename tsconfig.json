@@ -54,5 +54,5 @@
       "*": ["node_modules/*", "src/types/*"]
     }
   },
-  "include": ["backend/**/*", "backend/src/**/*.json"]
+  "include": ["server/**/*", "server/src/**/*.json"]
 }
