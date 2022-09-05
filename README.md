@@ -52,6 +52,7 @@ ALCHEMY_HTTP=https://eth-mainnet.g.alchemy.com/v2/your_key
 ### Prerequisites
 
 This project requires Nodejs installed and MongoDB setup and running locally and the given PORT in the .env to be vacant(No process running on that port).
+rimraf installed globally.
 
 ### Installation
 
