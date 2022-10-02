@@ -56,7 +56,7 @@ export class Chiliz {
         this.blockNumber = await this.getLastBlock()
         
         if(this.blockNumber != 0) {
-
+            
             this.chzContract.events.allEvents({
                 fromBlock: this.blockNumber
             })
@@ -116,9 +116,9 @@ export class Chiliz {
 
         if (checkTransaction.length > 0) {
             return checkTransaction[0].blockNumber
+        } else {
+            return 0
         }
-
-        return 0
     }
 
     async amountOfChilizTransfers() {
