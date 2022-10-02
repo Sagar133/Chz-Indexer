@@ -91,6 +91,7 @@ The following curl commands written in **Postman-Curls.txt(https://github.com/Sa
 - [x] API route to fetch the amount of Chiliz tokens transferred while listening to transactions from the indexer
 - [x] API route to validate if a given transaction hash is related to Chiliz token(Chiliz smart contract)
 - [x] Continue to listen from the last captured block incase of any down time
+- [x] Tested interoperability by running the program on another machine with different OS
 - [ ] Frontend in react for the indexer (https://github.com/Sagar133/Chz-indexer-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
